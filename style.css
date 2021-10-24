@@ -70,6 +70,7 @@ main{
 
 .container_background_image{
 	position: absolute;
+	position: fixed;
 }
 
 .background_graient{
