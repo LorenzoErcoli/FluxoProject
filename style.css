@@ -18,6 +18,7 @@ main{
 	background-repeat:no-repeat;
     background-size:cover;
     margin: 0px;
+    padding: 0px;
 }
 
 .background_floor{
@@ -26,10 +27,11 @@ main{
 }
 
 .container_background_image{
-	position: fixed;
+	position: absolute;
 }
 
 .background_graient{
+	margin: 0px;
 	background-image: radial-gradient(circle, rgba(0,0,0,0.1), rgba(0,0,0,0.3), rgba(0,0,0,0.7), rgba(0,0,0,1));;
 	opacity: 0.9;
 	height: 100vh;
@@ -47,11 +49,10 @@ main{
 .head_column{
 	z-index: 1;
 	width: 100vw;
-	height: 100vh;
 }
 
 #logo{
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -62,7 +63,7 @@ main{
 }
 
 #logo_back{
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -74,7 +75,7 @@ main{
 
 #logo_scritta{
 	width: 200px;
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -83,11 +84,10 @@ main{
     filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.2));
 }
 
-#simple_audio{
-	margin-top: 100px;
+.head_text{
+	position: absolute;
 }
 
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+#simple_audio{
+	margin-top: 100px;
 }

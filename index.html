@@ -8,26 +8,27 @@
   	<meta name="author" content="Lorenzo Ercoli">
   	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload = 'display_ct()'>
 	<main class = "background_floor" onclick="playaudio()">
 	
 		<div class = "container_background_image">
 			<div class = "background_graient">
 				<div class = "hangar_image"></div>
 			</div>
-		</div>
 
-		<div class = "head_column">
-			<img id = "logo_back" src="img/logo_black_back.png">
-			<img id = "logo" src="img/logo_black.png">
-			<img id = "logo_scritta" src="img/fluxo_scritta.png">
-
-
-			<div>
-				
+			<div class = "head_column">
+				<img id = "logo_back" src="img/logo_black_back.png">
+				<img id = "logo" src="img/logo_black.png">
+				<img id = "logo_scritta" src="img/fluxo_scritta.png">
 			</div>
 		</div>
+		
+<!-- 		<div class = "head_text">
+			<h1>CIAONE</h1>
+			<p class="city"><spam id="inputDate"></spam> · <spam id="inputTime"></spam></p>
+		</div> -->
 	</main>
+
 
 <audio id = "simple_audio" controls autoplay> 
 	<source src="sound/simple_02.mp3" type="audio/mpeg">
