@@ -44,18 +44,18 @@ var x = new Date()
 
 var month=x.getMonth()+1;
 
-if(month==1){month = "gennaio"}
-if(month==2){month = "febbraio"}
-if(month==3){month = "marzo";}
-if(month==4){month = "aprile"}
-if(month==5){month = "maggio"}
-if(month==6){month = "giugno"}
-if(month==7){month = "luglio"}
-if(month==8){month = "agosto"}
-if(month==9){month = "settembre"}
-if(month==10){month = "ottobre"}
-if(month==11){month = "novembre"}
-if(month==12){month = "dicembre"}
+if(month==1){month = "GENNAIO"}
+if(month==2){month = "FEBRAIO"}
+if(month==3){month = "MARZO";}
+if(month==4){month = "APRILE"}
+if(month==5){month = "MAGGIO"}
+if(month==6){month = "GIUGNO"}
+if(month==7){month = "LUGLIO"}
+if(month==8){month = "AGOSTO"}
+if(month==9){month = "SETTEMBRE"}
+if(month==10){month = "OTTOBRE"}
+if(month==11){month = "NOVEMBRE"}
+if(month==12){month = "DICEMBRE"}
 
 
 var day=x.getDate();

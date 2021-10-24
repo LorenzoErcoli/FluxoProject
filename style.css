@@ -1,6 +1,45 @@
-:root{
-	--dark-grey: #343434;
+@font-face {
+  font-family: "Ortica";
+  src: url("font/Ortica-Light.woff2") format("woff2"),
+       url("font/Ortica-Light.woff") format("woff");
 }
+
+h1{
+	font-family: "Ortica";
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-family: "Ortica";
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	font-family: "Ortica";
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-family: "Ortica";
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--dark-grey: #1F1F1F;
+	--platiunm: #EBE7E4;
+
+	--shadow_x: -10px;
+	--shadow_y: 5px;
+	--shadow_s: 3px;
+}
+
 html{
 	margin: 0px;
 	padding: 0px;
@@ -20,6 +59,9 @@ main{
     margin: 0px;
     padding: 0px;
 }
+
+
+
 
 .background_floor{
 	height: 100vh;
@@ -47,7 +89,6 @@ main{
 }
 
 .head_column{
-	z-index: 1;
 	width: 100vw;
 }
 
@@ -76,18 +117,65 @@ main{
 #logo_scritta{
 	width: 200px;
 	position: fixed;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	-webkit-filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.2));
-}
-
-.head_text{
-	position: absolute;
+	-webkit-filter: drop-shadow( var(--shadow_x) var(--shadow_y) var(--shadow_s): rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(var(--shadow_x) var(--shadow_y) var(--shadow_s) rgba(0, 0, 0, 0.2));
 }
 
 #simple_audio{
 	margin-top: 100px;
+}
+
+
+
+/*∞∞∞∞*/
+
+.container{
+	width: 100vw;
+	position: absolute;
+}
+
+.main_column{
+	width: 90%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.hader_text{
+	margin-top: 50px; 
+	color: var(--platiunm);
+	text-align: center;
+
+	-webkit-filter: drop-shadow( var(--shadow_x) var(--shadow_y) var(--shadow_s): rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(var(--shadow_x) var(--shadow_y) var(--shadow_s) rgba(0, 0, 0, 0.2));
+
+}
+
+.local_hour{
+	margin: 0 auto;
+	margin-bottom: 75vh;
+}
+
+.date_text{
+	margin-bottom: 20px;
+}
+
+.date_info{
+}
+
+
+.ticket_button{
+	background-color: var(--platiunm);
+	padding: 8px 25px;
+	border: none;
+	border-radius: 20px;
+	color: var(--dark-grey);
+	opacity: 0.5;
+}
+
+.ticket_button:hover{
+	opacity: 0.9;
 }
