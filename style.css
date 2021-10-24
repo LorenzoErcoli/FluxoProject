@@ -1,0 +1,93 @@
+:root{
+	--dark-grey: #343434;
+}
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: var(--dark-grey);
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+main{
+	background-image: url("img/fondo_ridotto.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0px;
+}
+
+.background_floor{
+	height: 100vh;
+	width: 100vw;
+}
+
+.container_background_image{
+	position: fixed;
+}
+
+.background_graient{
+	background-image: radial-gradient(circle, rgba(0,0,0,0.1), rgba(0,0,0,0.3), rgba(0,0,0,0.7), rgba(0,0,0,1));;
+	opacity: 0.9;
+	height: 100vh;
+	width: 100vw;
+}
+
+.hangar_image{
+	background-image: url("img/Pirelli_ridotta.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 100vh;
+	opacity: 0.1;
+}
+
+.head_column{
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+}
+
+#logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+
+/*	-webkit-filter: drop-shadow(-50px 10px 6px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(-50px 10px 6px rgba(0, 0, 0, 0.4));*/
+}
+
+#logo_back{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.8;
+
+/*	-webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));*/
+}
+
+#logo_scritta{
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	-webkit-filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.2));
+}
+
+#simple_audio{
+	margin-top: 100px;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
