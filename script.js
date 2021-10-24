@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	
+	var x = document.getElementById("simple_audio");
+	x.play()
+
 	try {
 		$('main').ripples({
 			resolution: 1500,
