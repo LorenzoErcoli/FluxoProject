@@ -12,14 +12,14 @@ h1{
 
 h2{
 	font-family: "Ortica";
-	font-size: 25px;
+	font-size: 27px;
 	margin: 0;
 	padding: 0;
 }
 
 h3{
 	font-family: "Ortica";
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
@@ -34,14 +34,14 @@ h4{
 
 p{
 	font-family: "Ortica";
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
 }
 
 :root{
 	--dark-grey: #1F1F1F;
-	--platiunm: #fbfbfb;
+	--platiunm: #ffff;
 
 	--shadow_x: -10px;
 	--shadow_y: 5px;
@@ -100,8 +100,10 @@ main{
 }
 
 #logo{
+	width:80vw;
+	max-width: 800px;
 	position: absolute;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0.5;
@@ -111,8 +113,10 @@ main{
 }
 
 #logo_back{
+	width:95vw;
+	max-width: 1000px;
 	position: absolute;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0.8;
@@ -124,7 +128,7 @@ main{
 #logo_scritta{
 	width: 200px;
 	position: absolute;
-	top: 48%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -167,6 +171,7 @@ main{
 	padding: 0;
 	margin: 0;
 	display: inline-block;
+	vertical-align:top;
 	position: relative;
 	width: 48%;
 }
@@ -178,7 +183,7 @@ main{
 .hader_text{
 	color: var(--platiunm);
 	text-align: center;
-	height: 96vh;
+	height: 100vh;
 
 	-webkit-filter: drop-shadow( var(--shadow_x) var(--shadow_y) var(--shadow_s): rgba(0, 0, 0, 0.2));
     filter: drop-shadow(var(--shadow_x) var(--shadow_y) var(--shadow_s) rgba(0, 0, 0, 0.2));
@@ -187,7 +192,7 @@ main{
 
 .local_hour{
 	padding-top:  50px;
-	margin-bottom: 65vh;
+	margin-bottom: 70vh;
 }
 
 .date_text{
@@ -211,3 +216,43 @@ main{
 	opacity: 0.9;
 }
 
+.block_credits{
+	margin-top:100px;
+}
+
+.credits_column{
+	padding-bottom: 15px;
+}
+.separator{
+	position: relative;
+    border-bottom: 1px solid;
+    margin: 1.5rem 0 ;
+}
+
+.separator span{
+	position: absolute;
+	background: var(--platiunm);
+	padding-right: 0.8rem;
+	top: -0.8rem;
+}
+
+.img_credits{
+	display: inline-block;
+	vertical-align:top;
+  	}
+
+.credits_x3{
+	height: 85px;
+	padding-right: 8px;
+}
+
+.credits_x2{
+	height: 78px;
+	padding-right: 8px;
+	margin-bottom: 5px;
+}
+
+.credits_x1{
+	height: 78px;
+	padding-right: 11px;
+}
