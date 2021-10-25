@@ -100,7 +100,7 @@ main{
 }
 
 #logo{
-	width:80vw;
+	width:85vw;
 	max-width: 800px;
 	position: absolute;
 	top: 48%;
@@ -113,7 +113,7 @@ main{
 }
 
 #logo_back{
-	width:95vw;
+	width:100vw;
 	max-width: 1000px;
 	position: absolute;
 	top: 48%;
@@ -255,4 +255,20 @@ main{
 .credits_x1{
 	height: 78px;
 	padding-right: 11px;
+}
+
+
+
+/*MOBILE*/
+
+
+@media only screen and (max-width: 900px) {
+
+	.single_column{
+		margin-bottom: 20px;
+		display: block;
+		vertical-align:top;
+		width: 100%;
+	}
+
 }
