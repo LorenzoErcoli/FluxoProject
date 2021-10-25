@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	bk = document.getElementById("pr");
+
+	console.log(bk)
+
 	try {
 		$('main').ripples({
 			resolution: 1500,
@@ -29,7 +33,7 @@ $(document).ready(function() {
 var x = document.getElementById("simple_audio");
 
 function playaudio(){
-	x.play()
+	// x.play()
 }
 
 function display_c(){

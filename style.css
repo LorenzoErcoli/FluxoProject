@@ -19,6 +19,14 @@ h2{
 
 h3{
 	font-family: "Ortica";
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+h4{
+	font-family: "Ortica";
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -33,7 +41,7 @@ p{
 
 :root{
 	--dark-grey: #1F1F1F;
-	--platiunm: #EBE7E4;
+	--platiunm: #fbfbfb;
 
 	--shadow_x: -10px;
 	--shadow_y: 5px;
@@ -47,7 +55,6 @@ html{
 
 body{
 	background: var(--dark-grey);
-	overflow: hidden;
 	margin: 0px;
 	padding: 0px;
 }
@@ -70,7 +77,6 @@ main{
 
 .container_background_image{
 	position: absolute;
-	position: fixed;
 }
 
 .background_graient{
@@ -94,7 +100,7 @@ main{
 }
 
 #logo{
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -105,7 +111,7 @@ main{
 }
 
 #logo_back{
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -117,7 +123,7 @@ main{
 
 #logo_scritta{
 	width: 200px;
-	position: fixed;
+	position: absolute;
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -137,6 +143,14 @@ main{
 .container{
 	width: 100vw;
 	position: absolute;
+
+}
+
+.container_text{
+	background-color: var(--platiunm);
+	margin: 0;
+	width: 100vw;
+	padding-bottom: 90px;
 }
 
 .main_column{
@@ -145,10 +159,26 @@ main{
 	margin: 0 auto;
 }
 
+.inline_column{
+	padding-top: 90px;
+}
+
+.single_column{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	width: 48%;
+}
+
+.singele_column_sx{
+	padding-right: 3%;
+}
+
 .hader_text{
-	margin-top: 50px; 
 	color: var(--platiunm);
 	text-align: center;
+	height: 96vh;
 
 	-webkit-filter: drop-shadow( var(--shadow_x) var(--shadow_y) var(--shadow_s): rgba(0, 0, 0, 0.2));
     filter: drop-shadow(var(--shadow_x) var(--shadow_y) var(--shadow_s) rgba(0, 0, 0, 0.2));
@@ -156,8 +186,8 @@ main{
 }
 
 .local_hour{
-	margin: 0 auto;
-	margin-bottom: 75vh;
+	padding-top:  50px;
+	margin-bottom: 65vh;
 }
 
 .date_text{
@@ -180,3 +210,4 @@ main{
 .ticket_button:hover{
 	opacity: 0.9;
 }
+
