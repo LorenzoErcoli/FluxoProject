@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FLUXO - An encounter with water</title>
+	<meta name="description" content="FLUXO - An encounter with water">
+  	<meta name="keywords" content="Hangar,Bicocca,Art,Milano,Art">
+  	<meta name="author" content="Lorenzo Ercoli">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload = 'display_ct()'>
+	<main class = "background_floor" onclick="playaudio()" style = "width: 1280px; height: 1280px">
+	
+		<div class = "container_background_image" style = "width: 1280px; height: 1280px">
+			<div class = "background_graient" style = "width: 1280px; height: 1280px">
+				<div class = "hangar_image" style = "width: 1280px; height: 1280px"></div>
+			</div>
+
+			<div class = "head_column" style = "width: 1280px;">
+				<img id = "logo_back" src="img/logo_black_back.png">
+				<img id = "logo" src="img/logo_black.png">
+				<img id = "logo_scritta" src="img/fluxo_scritta.png">
+			</div>
+		</div>
+
+		<div class = "container" style = "width: 1280px; height: 1280px">
+			<div class = "main_column hader_text" style = "width: 1280px; height: 1280px">
+				<div class = "date_info">
+					<p class="local_hour" style = "opacity: 0"> <spam id="inputDate">24  ottobre  2021</spam> · <spam id="inputTime">16 : 02 : 51</spam></p>
+					<h2 class = "date_text">24 — 25 NOVEMBRE<br>HANGAR BICOCCA -MILANO</h2>
+					<button class = "ticket_button" style = "opacity: 0"><h4>ACQUISTA BIGLIETTI</h4></button>
+				</div>
+
+			</div>
+		</div>
+
+
+
+<audio id = "simple_audio" autoplay> 
+	<source src="sound/simple_02.mp3" type="audio/mpeg">
+</audio>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

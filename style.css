@@ -6,6 +6,7 @@
 
 h1{
 	font-family: "Ortica";
+	font-size: 30px;
 	margin: 0;
 	padding: 0;
 }
@@ -28,6 +29,13 @@ h3{
 h4{
 	font-family: "Ortica";
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+h5{
+	font-family: "Ortica";
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
 }
@@ -67,8 +75,26 @@ main{
     padding: 0px;
 }
 
+footer{
+	/*background-image: url("img/fondo_ridotto.jpg");*/
+	background-color: var(--dark-grey);
+	color: var(--platiunm);
 
+}
 
+#baloon{
+	display: block;
+	position:relative;
+	border-radius: 8px;
+	width: 8px;
+	height: 8px;
+	margin-top: 20px;
+	left: 50%;
+	background: var(--platiunm);
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
 
 .background_floor{
 	height: 100vh;
@@ -83,8 +109,6 @@ main{
 	margin: 0px;
 	background-image: radial-gradient(circle, rgba(0,0,0,0.1), rgba(0,0,0,0.3), rgba(0,0,0,0.7), rgba(0,0,0,1));;
 	opacity: 0.9;
-	height: 100vh;
-	width: 100vw;
 }
 
 .hangar_image{
@@ -106,6 +130,7 @@ main{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	opacity: 0.5;
 
 /*	-webkit-filter: drop-shadow(-50px 10px 6px rgba(0, 0, 0, 0.4));
@@ -119,6 +144,7 @@ main{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	opacity: 0.8;
 
 /*	-webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
@@ -131,6 +157,7 @@ main{
 	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 
 	-webkit-filter: drop-shadow( var(--shadow_x) var(--shadow_y) var(--shadow_s): rgba(0, 0, 0, 0.2));
     filter: drop-shadow(var(--shadow_x) var(--shadow_y) var(--shadow_s) rgba(0, 0, 0, 0.2));
@@ -157,6 +184,11 @@ main{
 	padding-bottom: 90px;
 }
 
+ .container_footer{
+ 	padding-top:90px;
+ 	padding-bottom:90px;
+ }
+
 .main_column{
 	width: 90%;
 	max-width: 1080px;
@@ -174,6 +206,15 @@ main{
 	vertical-align:top;
 	position: relative;
 	width: 48%;
+}
+
+.triple_column{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align:bottom;
+	position: relative;
+	width: 33%;
 }
 
 .singele_column_sx{
@@ -217,7 +258,7 @@ main{
 }
 
 .block_credits{
-	margin-top:100px;
+	margin-top:90px;
 }
 
 .credits_column{
@@ -240,6 +281,10 @@ main{
 	display: inline-block;
 	vertical-align:top;
   	}
+
+.img_footer{
+	width: 200px;
+}
 
 .credits_x3{
 	height: 85px;
@@ -264,11 +309,64 @@ main{
 
 @media only screen and (max-width: 900px) {
 
+
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 16px;
+	}
+
+	h4{
+		font-size: 16px;
+	}
+
+	h5{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
 	.single_column{
 		margin-bottom: 20px;
 		display: block;
 		vertical-align:top;
 		width: 100%;
 	}
+
+	.local_hour{
+	padding-top:  50px;
+	margin-bottom: 55vh;
+	}
+
+
+	#logo{
+		top: 38%;
+	}
+
+	#logo_back{
+		top: 38%;
+	}
+
+	#logo_scritta{
+	width: 140px;
+	top: 37%;
+	}
+
+
+	.triple_column{
+	margin-bottom: 20px;
+	display: block;
+	vertical-align:top;
+	width: 100%;
+	}
+
 
 }

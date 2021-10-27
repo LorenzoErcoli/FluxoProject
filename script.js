@@ -1,11 +1,21 @@
-$(document).ready(function() {
-	bk = document.getElementById("pr");
 
-	console.log(bk)
+
+
+
+$(document).ready(function() {
+	var w = window.innerWidth;
+	var	h = window.innnerHeight;
+
+	if (w < 900){
+		var value_resolution = 2000
+		console.log("miao")
+	}else{
+		var value_resolution = 1500
+	}
 
 	try {
 		$('main').ripples({
-			resolution: 1500,
+			resolution: value_resolution,
 			dropRadius: 15, //px
 			perturbance: 0.05,
 			strength: 1,
@@ -26,19 +36,19 @@ $(document).ready(function() {
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 400);
 
-
 });
 
 
 var x = document.getElementById("simple_audio");
 
 function playaudio(){
-	// x.play()
+	x.play()
 }
 
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh);
+mytime=setTimeout('scrollBaloon()',refresh);
 }
 
 
@@ -80,3 +90,25 @@ document.getElementById('inputDate').innerHTML = x3;
 document.getElementById('inputTime').innerHTML = x4;
 display_c();
 }
+
+	function scrollBaloon(){
+	  var hei = $(window).height();
+	  var wid = $(window).width();
+
+	  
+	  if (wid > 600){
+	    $(document).ready(function(){
+	    $("#baloon").animate({height: "10px", width: "10px", opacity: 0.6,},100)
+		$("#baloon").animate({height: "10px", width: "10px", opacity: 0.6,},1000);
+		$("#baloon").animate({"margin-top": "60px", height: "3px", width: "3px",  opacity: 0.2},1000);
+		$("#baloon").animate({"margin-top": "20px", opacity: 0,},1500);
+		});  
+	  }else{ 
+	    $(document).ready(function(){
+	  	$("#baloon").animate({height: "10px", width: "10px", opacity: 0.6,},100)
+		$("#baloon").animate({height: "10px", width: "10px", opacity: 0.6,},1000);
+		$("#baloon").animate({"margin-top": "60px", height: "3px", width: "3px",  opacity: 0.2},1000);
+		$("#baloon").animate({"margin-top": "20px", opacity: 0,},1500);
+	  });
+	  }
+	}
