@@ -29,17 +29,22 @@ $(document).ready(function() {
 	var	h = window.innnerHeight;
 
 	if (w < 900){
-		var value_resolution = 2000
+		var value_resolution = 1500
+		var value_perturbance = 0.002
+		var value_drop = 0.04
 		console.log("miao")
 	}else{
 		var value_resolution = 1500
+		var value_perturbance = 0.05
+		var value_drop = 400
+		var value_drop = 0.004
 	}
 
 	try {
 		$('main').ripples({
 			resolution: value_resolution,
-			dropRadius: 15, //px
-			perturbance: 0.05,
+			dropRadius: 18, //px
+			perturbance: value_perturbance,
 			strength: 1,
 		});
 	}
@@ -52,8 +57,8 @@ $(document).ready(function() {
 		var $el = $('main');
 		var x = Math.random() * $el.outerWidth();
 		var y = Math.random() * $el.outerHeight();
-		var dropRadius = 15;
-		var strength = 0.004 + Math.random() * 0.004;
+		var dropRadius = 18;
+		var strength = value_drop + Math.random() * value_drop;
 
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 400);
