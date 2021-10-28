@@ -88,11 +88,11 @@ footer{
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   color: #FFF;  
   text-align: center;
-  padding-top: 42vh;
+  padding-top: 42.5vh;
   background-color: var(--dark-grey);
   box-sizing: border-box;
   z-index: 1;
@@ -383,6 +383,14 @@ footer{
 	vertical-align:top;
 	width: 100%;
 	}
+
+	#loading_screen
+		{  
+		  padding-top: 34.5vh;
+		  background-color: var(--dark-grey);
+		  box-sizing: border-box;
+		  z-index: 1;
+		}
 
 
 }

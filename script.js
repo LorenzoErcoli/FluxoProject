@@ -9,10 +9,17 @@
 function nascondi_loading_screen()
 {
   // document.getElementById("loading_screen").style.display = 'none';
-  $("#loading_screen").animate({opacity: 1,},1000)
-  $("#loading_text").animate({opacity: 0,},2100)
-  $("#loading_screen").animate({opacity: 0,},2600)
-  $("#loading_screen").animate({display: 'none',},2600)
+  $("#loading_screen").animate({opacity: 1},1000)
+  $("#loading_text").animate({opacity: 0},2000)
+  $("#loading_screen").animate({opacity: 0},2600)
+  $("#loading_screen").animate({display: 'none'},2600)
+
+  setTimeout(function() {removeloading()} ,2800)
+
+  function removeloading(){
+	  var el = document.getElementById('loading_screen')
+	  el.remove()
+  }
 }
 
 
