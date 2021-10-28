@@ -4,6 +4,16 @@
        url("font/Ortica-Light.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Ortica-bold";
+  src: url("font/Ortica-Bold.woff2") format("woff2"),
+       url("font/Ortica-Bold.woff") format("woff");
+}
+
+b{
+	font-family: "Ortica-bold";
+}
+
 h1{
 	font-family: "Ortica";
 	font-size: 30px;
