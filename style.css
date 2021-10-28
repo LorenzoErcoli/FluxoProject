@@ -82,6 +82,22 @@ footer{
 
 }
 
+#loading_screen
+{  
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FFF;  
+  text-align: center;
+  padding-top: 42vh;
+  background-color: var(--dark-grey);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 #baloon{
 	display: block;
 	position:relative;

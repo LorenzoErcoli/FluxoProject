@@ -1,4 +1,19 @@
-
+(function(){   
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);    
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function nascondi_loading_screen()
+{
+  // document.getElementById("loading_screen").style.display = 'none';
+  $("#loading_screen").animate({opacity: 1,},1000)
+  $("#loading_text").animate({opacity: 0,},2100)
+  $("#loading_screen").animate({opacity: 0,},2600)
+  $("#loading_screen").animate({display: 'none',},2600)
+}
 
 
 
