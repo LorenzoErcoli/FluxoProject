@@ -20,7 +20,7 @@ h2{
 
 h3{
 	font-family: "Ortica";
-	font-size: 22px;
+	font-size: 23px;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
@@ -92,7 +92,7 @@ footer{
   width: 100vw;
   color: #FFF;  
   text-align: center;
-  padding-top: 42.5vh;
+  padding-top: 35vh;
   background-color: var(--dark-grey);
   box-sizing: border-box;
   z-index: 1;
